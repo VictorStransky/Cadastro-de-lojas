@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Lojas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body style="background-color: #FFFFFF;"> 
+    <header class="container-fluid" style="background-color: #4B0082;"> 
+        <div class="text-center">
+            <a href="./index.html"><img src="logoPet.png" width="130px" height="100px" alt="Logo" style="filter: brightness(100%);"></a>
+        </div>
+        <h1 class="text-center mb-0" style="color: white;">Cadastro de Lojas</h1>
+    </header>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" style="background-color: #FF8C00; color: white;">
+                    <div class="card-header text-center">
+                        <h2 class="mb-0">Formulário de Cadastro</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="registration-form" class="registration-form">
+                            <div class="form-group">
+                                <label for="nome-loja">Nome da Loja</label>
+                                <input type="text" class="form-control" id="nome-loja" name="nome-loja" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descricao">Descrição</label>
+                                <textarea class="form-control" id="descricao" name="descricao" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="endereco">Endereço</label>
+                                <input type="text" class="form-control" id="endereco" name="endereco" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cep">CEP</label>
+                                <input type="text" class="form-control" id="cep" name="cep" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" name="cidade" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" class="form-control" id="telefone" name="telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="categoria">Categoria</label>
+                                <select class="form-control" id="categoria" name="categoria" required>
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="alimentacao">Alimentação</option>
+                                    <option value="vestuario">Vestuário</option>
+                                    <option value="servicos-veterinarios">Serviços Veterinários</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group" id="outros-campo" style="display: none;">
+                                <label for="outros" style="color: white;">Escreva aqui:</label>
+                                <input type="text" class="form-control" id="outros" name="outros">
+                            </div>
+                            <div id="mensagem-sucesso" class="alert alert-success" style="display: none;">
+                                Cadastro realizado com sucesso!
+                            </div>
+                            <div class="form-group">
+                                <label for="horario-funcionamento">Horário de Funcionamento</label>
+                                <input type="text" class="form-control" id="horario-funcionamento" name="horario-funcionamento" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar Loja</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
